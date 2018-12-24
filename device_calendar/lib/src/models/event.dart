@@ -65,8 +65,8 @@ class Event {
     data['calendarId'] = this.calendarId;
     data['title'] = this.title;
     data['description'] = this.description;
-    data['start'] = this.start.millisecondsSinceEpoch;
-    data['end'] = this.end.millisecondsSinceEpoch;
+    data['start'] = this.start?.millisecondsSinceEpoch;
+    data['end'] = this.end?.millisecondsSinceEpoch;
     data['allDay'] = this.allDay;
     data['location'] = this.location;
     if (attendees != null) {
