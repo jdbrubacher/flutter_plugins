@@ -6,4 +6,9 @@ class RetrieveEventsParams {
   final DateTime endDate;
 
   const RetrieveEventsParams({this.eventIds, this.startDate, this.endDate});
+
+  @override
+  String toString() {
+    return 'RetrieveEventsParams{eventIds: $eventIds, startDate: $startDate, endDate: $endDate}';
+  }
 }

@@ -20,4 +20,9 @@ class Attendee {
     data['name'] = this.name;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Attendee{name: $name}';
+  }
 }

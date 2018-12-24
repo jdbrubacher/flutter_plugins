@@ -26,4 +26,9 @@ class Calendar {
     data['isReadOnly'] = this.isReadOnly;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Calendar{id: $id, name: $name, isReadOnly: $isReadOnly}';
+  }
 }

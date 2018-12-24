@@ -17,4 +17,9 @@ class Result<T> {
 
   T data;
   List<String> errorMessages = new List<String>();
+
+  @override
+  String toString() {
+    return 'Result{data: $data, errorMessages: $errorMessages}';
+  }
 }

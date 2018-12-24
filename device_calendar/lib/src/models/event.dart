@@ -79,4 +79,9 @@ class Event {
     }
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Event{eventId: $eventId, calendarId: $calendarId, title: $title, description: $description, start: $start, end: $end, allDay: $allDay, location: $location, attendees: $attendees}';
+  }
 }
